@@ -60,7 +60,7 @@ function ViewExpense() {
 
     try {
       const res = await fetch(
-        `http://localhost:8080/api/expenses/delete/${id}`,
+        `https://splitease-4an5.onrender.com/api/expenses/delete/${id}`,
         {
           method: "DELETE",
           headers: {

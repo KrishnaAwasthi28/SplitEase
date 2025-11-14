@@ -12,7 +12,7 @@ const Login = () => {
   const user = { email, password };
 
   try {
-    const res = await fetch("http://localhost:8080/api/auth/login", {
+    const res = await fetch("https://splitease-4an5.onrender.com/api/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(user),

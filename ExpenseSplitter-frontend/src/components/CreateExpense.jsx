@@ -51,7 +51,7 @@ function CreateExpense() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await fetch("http://localhost:8080/api/expenses/create", {
+      const res = await fetch("https://splitease-4an5.onrender.com/api/expenses/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
