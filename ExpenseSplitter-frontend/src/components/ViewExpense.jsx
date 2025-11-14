@@ -16,12 +16,9 @@ function ViewExpense() {
       const email = encodeURIComponent(user.email);
       const token = localStorage.getItem("token");
 
-      console.log("User =", user);
-      console.log("URL =", `http://localhost:8080/api/expenses/user/${email}`);
-
       try {
         const res = await fetch(
-          `http://localhost:8080/api/expenses/user/${email}`,
+          `https://splitease-4an5.onrender.com/api/expenses/user/${email}`,
           {
             method: "GET",
             headers: {
